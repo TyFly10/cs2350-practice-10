@@ -42,7 +42,7 @@ function addNewCard(event){
     if(t && d && p){
         let card  = { place: t, description: d, poster: p}
         cards.push(card)
-        localStorage.setItem('cards', JSON.strigify(cards))
+        localStorage.setItem('cards', JSON.stringify(cards))
     }
 
     this.reset()
